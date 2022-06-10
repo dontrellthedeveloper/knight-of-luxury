@@ -41,9 +41,11 @@ section {
     overflow: hidden;
 }
 
+
 /* ================================
 |   |   |   Preloader
 ================================ */
+
 #preloader {
     background-color: #fff;
     position: fixed;
@@ -65,7 +67,6 @@ section {
     margin-top: -35px;
     margin-left: -35px;
 }
-
 
 
 /* ================================
@@ -173,6 +174,7 @@ section {
     border: 1px solid #212226;
 }
 
+
 /* ================================
 |   |   |   Arrow Down
 ================================ */
@@ -194,7 +196,6 @@ section {
     color: #f4c613;
 }
 
-
 /* ================================
 |   |   |   Content Boxes
 ================================ */
@@ -207,7 +208,7 @@ section {
 }
 
 /* ================================
-   Vertical/Horizontal Headings
+|   Vertical/Horizontal Headings
 ================================ */
 .vertical-heading h5 {
     color: #f4c613;
@@ -223,13 +224,17 @@ section {
     left: -53px;
 }
 
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+}
+
+
 .horizontal-heading h2,
 .horizontal-heading h2 {
     font-size: 42px;
     font-weight: 100;
     line-height: 45px;
 }
-
 .horizontal-heading {
     margin-bottom: 80px;
 }
@@ -246,12 +251,10 @@ section {
     margin: 0;
 }
 
+
 /* ================================
-|   |   |   About
+|   |   |   About 01
 ================================ */
-
-
-
 
 #about-right p:first-child {
     margin-bottom: 30px;
@@ -262,6 +265,7 @@ section {
 #about-bottom img {
     margin: 0 auto;
 }
+
 
 
 /* ================================
@@ -325,7 +329,6 @@ section {
     -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
 }
-
 
 
 /* ================================
@@ -418,7 +421,6 @@ ul.social-list li:nth-child(3) a:hover {
     color: #212226;
 }
 
-
 /* ================================
 |   |   |   Skills
 ================================ */
@@ -488,15 +490,16 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 
-#service-pic img {
-    width: 100%;
-}
 
 
 
 /* ================================
 |   |   |   Services 01
 ================================ */
+#service-pic img {
+    width: 100%;
+}
+
 #services-01 img {
     margin: 60px 0;
 }
@@ -531,7 +534,6 @@ ul.social-list li:nth-child(3) a:hover {
 .service p {
     line-height: normal;
 }
-
 /* ================================
 |  Services 02 (Responsive Tabs)
 ================================ */
@@ -595,6 +597,144 @@ ul.social-list li:nth-child(3) a:hover {
     margin-bottom: 30px;
 }
 
-
 /* ================================
+|   |   |   Portfolio
 ================================ */
+#portfolio {
+    padding-bottom: 160px;
+}
+
+.portfolio-pic img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.div-size {
+    display: inline-block;
+}
+
+#portfolio .vertical-heading {
+    margin-bottom: 50px;
+}
+.row.no-gutters [class*=col-] {
+    padding: 0;
+    margin: 0;
+}
+
+
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.center-pics {
+    text-align: center;
+}
+
+
+.margin-bottom-g {
+    margin-bottom: 10px;
+}
+
+.no-underline a,
+.no-underline {
+    text-underline: none;
+}
+
+
+/* Zoom Effect */
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;transition:
+        transform .5s ease, -webkit-tranform .5s
+        ease;
+}
+
+.portfolio-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Overlay Effect */
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, 0.9);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Item Details Effects */
+.portfolio-item-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.portfolio-item-details h3 {
+    color: #f4c613;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 6px;
+    width: 30px;
+}
+
+.portfolio-item-details p {
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+/* Show Overlay on mouse over */
+.portfolio-item:hover .portfolio-item-details h3 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-details p {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
+}
+
+
