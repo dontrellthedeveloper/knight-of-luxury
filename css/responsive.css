@@ -17,6 +17,7 @@
     display: none;
 }
 
+
 #mobile-nav {
     height: 0;
     width: 100%;
@@ -78,7 +79,6 @@
     color: #f4c613;
     font-weight: 500;
 }
-
 
 
 /* ================================
@@ -149,22 +149,22 @@
     }
 
     .r-tabs-accordion-title a {
-        font-family: "Raleway", sans-serif;
-        font-size: 13px;
-        color: #212226;
-        text-transform: uppercase;
-        font-weight: 400;
-        padding: 0;
-        text-decoration: none;
-    }
-    /* Tab active state */
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+/* Tab active state */
     .r-tabs-accordion-title.r-tabs-state-active a {
-        color: #f4c613;
-        font-weight: 700;
-        border-bottom: 3px solid #f4c613;
-        padding-bottom: 5px;
-        -webkit-transition: border-color 300ms linear;
-        transition: border-color 300ms linear;
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
     }
 
     .pricing-table .price h2 {
@@ -185,8 +185,9 @@
 
 }
 
-/* Large Devices (Desktop & Laptops) */
+/* Extra Small Devices (Desktop & Laptops) */
 @media(max-width: 767px) {
+
     .navbar {
         padding: 20px 0;
     }
@@ -481,4 +482,5 @@
     .testimonial .stars {
         font-size: 10px;
     }
+
 }

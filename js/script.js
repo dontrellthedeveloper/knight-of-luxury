@@ -6,6 +6,7 @@ $(window).on('load', function() {
     $('#preloader').delay(350).fadeOut('slow');
 });
 
+
 /* ================================
 |   |   |   Team
 ================================ */
@@ -29,7 +30,6 @@ $(function() {
         }
     });
 });
-
 
 
 /* ================================
@@ -62,7 +62,10 @@ $(function () {
     $("#services-tabs").responsiveTabs({
         animation: 'slide'
     });
+
 });
+
+
 
 /* ================================
 |   |   |   Portfolio
@@ -125,8 +128,8 @@ $(function() {
 $(function () {
 
     $(".counter").counterUp({
-        delay: 10,
-        time: 2000
+       delay: 10,
+       time: 2000
     });
 
 });
@@ -160,14 +163,15 @@ $(function() {
 });
 
 
+
 /* ================================
 |   |   |   Google Map
 ================================ */
 $(window).on('load', function () {
 
     // Map Variables
-    var addressString = '601 N Fort Lauderdale Beach Blvd, Fort Lauderdale, FL 33304';
-    var myLatlng = {lat: 26.131540, lng: -80.103752};
+    var addressString = '230 Broadway, NY, New York 10007, USA';
+    var myLatlng = {lat: 40.712685, lng: -74.005920};
 
     //1. Render Map
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -192,6 +196,7 @@ $(window).on('load', function () {
         infowindow.open(map, marker);
     });
 
+
     // 4. Resize Function
     google.maps.event.addDomListener(window, 'resize', function() {
 
@@ -202,7 +207,6 @@ $(window).on('load', function () {
 
 
 });
-
 /* ================================
 |   |   |   Navigation
 ================================ */
@@ -219,7 +223,7 @@ $(function () {
         showHideNav();
 
     });
-
+    
     function showHideNav() {
 
         if( $(window).scrollTop() > 50 ) {
@@ -228,7 +232,7 @@ $(function () {
             $("nav").addClass("white-nav-top");
 
             // Show dark logo
-            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+            $(".navbar-brand img").attr("src", "img/logo/knight-of-luxury-logo-black.png");
 
             // Show back to top
             $("#back-to-top").fadeIn();
@@ -239,7 +243,7 @@ $(function () {
             $("nav").removeClass("white-nav-top");
 
             // Show logo
-            $(".navbar-brand img").attr("src", "img/logo/logo.png");
+            $(".navbar-brand img").attr("src", "img/logo/knight-of-luxury-logo-white.png");
 
             // Show back to top
             $("#back-to-top").fadeOut();
@@ -267,6 +271,7 @@ $(function () {
 });
 
 
+
 /* ================================
 |   |   |   Mobile menu
 ================================ */
@@ -281,3 +286,7 @@ $(function() {
         $("#mobile-nav").css("height", "0%");
     });
 });
+
+
+
+
