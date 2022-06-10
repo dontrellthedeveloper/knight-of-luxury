@@ -16,7 +16,8 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+<!--    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
@@ -29,13 +30,46 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
 
 <!-- Preloader -->
 <div id="preloader">
     <div id="status">&nbsp;</div>
 </div>
 
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="site-nav-wrapper">
+
+                <div class="navbar-header">
+                    <!-- Logo -->
+                    <a href="" class="navbar-brand smooth-scroll" href="#home">
+                        <img src="img/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a class="smooth-scroll" href="#home">Home</a></li>
+                            <li><a class="smooth-scroll" href="#about">About</a></li>
+                            <li><a class="smooth-scroll" href="#team">Team</a></li>
+                            <li><a class="smooth-scroll" href="#services">Services</a></li>
+                            <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                            <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                            <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End of Header -->
 
 <!-- Home -->
 <section id="home">
@@ -61,12 +95,12 @@
 
             <div id="home-btn">
 
-                <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button" >Book Now</a>
+                <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button" >Book Now</a>
             </div>
         </div>
     </div>
 
-    <a href="#about" id="arrow-down">
+    <a href="#about" id="arrow-down" class="smooth-scroll">
         <i class="fa fa-angle-down"></i>
     </a>
 
@@ -579,7 +613,7 @@
 
                     <div class="isotope-filters">
 
-                        <div class="col-md-2 div-size filter logo">
+                        <div class="col-md-3 div-size filter logo">
 
                             <!-- Portfolio Item 01 -->
                             <div class="portfolio-item portfolio-pic no-underline">
@@ -606,7 +640,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-2 div-size filter web">
+                        <div class="col-md-3 div-size filter web">
                             <div class="portfolio-item portfolio-pic">
 
                                 <a href="img/portfolio/002.jpg" title="Add Description">
@@ -630,7 +664,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-2 div-size filter web">
+                        <div class="col-md-3 div-size filter web">
                             <div class="portfolio-item portfolio-pic">
 
                                 <a href="img/portfolio/003.jpg" title="Add Description">
@@ -654,7 +688,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-2 div-size filter logo">
+                        <div class="col-md-3 div-size filter logo">
                             <div class="portfolio-item portfolio-pic">
 
                                 <a href="img/portfolio/004.jpg" title="Add Description">
@@ -680,7 +714,7 @@
                         </div>
 
 
-                        <div class="col-md-2 div-size filter desktop">
+                        <div class="col-md-3 div-size filter desktop">
                             <div class="portfolio-item portfolio-pic">
 
                                 <a href="img/portfolio/005.jpg" title="Add Description">
@@ -704,7 +738,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-2 div-size filter logo">
+                        <div class="col-md-3 div-size filter logo">
                             <div class="portfolio-item portfolio-pic">
 
                                 <a href="img/portfolio/006.jpg" title="Add Description">
@@ -728,7 +762,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-2 div-size filter mobile">
+                        <div class="col-md-3 div-size filter mobile">
                             <div class="portfolio-item portfolio-pic">
 
                                 <a href="img/portfolio/007.jpg" title="Add Description">
@@ -752,7 +786,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-2 div-size filter mobile">
+                        <div class="col-md-3 div-size filter mobile">
                             <div class="portfolio-item portfolio-pic">
 
                                 <a href="img/portfolio/008.jpg" title="Add Description">
@@ -777,55 +811,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-2 div-size filter desktop">
-                            <div class="portfolio-item portfolio-pic">
 
-                                <a href="img/portfolio/001.jpg" title="Add Description">
-                                    <img src="img/portfolio/001.jpg" class="img-responsive" alt="portfolio 08">
-
-                                    <div class="portfolio-item-overlay margin-top-g">
-                                        <div class="portfolio-item-details text-center">
-                                            <!-- Item Header -->
-                                            <h3>Mobile Design</h3>
-
-                                            <!-- Item Strips -->
-                                            <span></span>
-
-                                            <!-- Item Description -->
-                                            <p>Video Web</p>
-
-                                        </div>
-                                    </div>
-
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 div-size filter web">
-                            <div class="portfolio-item portfolio-pic">
-
-                                <a href="img/portfolio/002.jpg" title="Add Description">
-                                    <img src="img/portfolio/002.jpg" class="img-responsive" alt="portfolio 08">
-
-                                    <div class="portfolio-item-overlay margin-top-g">
-                                        <div class="portfolio-item-details text-center">
-                                            <!-- Item Header -->
-                                            <h3>Mobile Design</h3>
-
-                                            <!-- Item Strips -->
-                                            <span></span>
-
-                                            <!-- Item Description -->
-                                            <p>Video Web</p>
-
-                                        </div>
-                                    </div>
-
-                                </a>
-
-                            </div>
-                        </div>
 
                     </div>
 
@@ -1371,6 +1357,10 @@
             </div>
         </div>
     </div>
+    <!-- Back To Top -->
+    <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll" title="home" role="button"><i
+            class="fa fa-angle-up"></i>
+    </a>
 </footer>
 <!-- End of Footer -->
 
@@ -1378,7 +1368,8 @@
 <!-- JQuery -->
 <script src="js/jquery.js"></script>
 <!-- Bootstrap JS -->
-<script src="js/bootstrap/bootstrap.js"></script>
+<!--<script src="js/bootstrap/bootstrap.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- Owl Carousel JS -->
 <script src="js/owl-carousel/owl.carousel.min.js"></script>
 <!-- Waypoints -->
@@ -1393,6 +1384,8 @@
 <script src="js/counter/jquery.counterup.min.js"></script>
 <!-- Google Maps API -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzN3UirWGc_8VYejrX9GLhNimaxfXe_WA"></script>
+<!-- Easing -->
+<script src="js/easing/jquery.easing.1.3.js"></script>
 <!--Custom JS -->
 <script src="js/script.js"></script>
 </body>
