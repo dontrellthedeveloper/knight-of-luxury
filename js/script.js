@@ -170,8 +170,8 @@ $(function() {
 $(window).on('load', function () {
 
     // Map Variables
-    var addressString = '230 Broadway, NY, New York 10007, USA';
-    var myLatlng = {lat: 40.712685, lng: -74.005920};
+    var addressString = '601 N Fort Lauderdale Beach Blvd, Fort Lauderdale, FL 33304';
+    var myLatlng = {lat: 26.131540, lng: -80.103752};
 
     //1. Render Map
     var map = new google.maps.Map(document.getElementById('map'), {
