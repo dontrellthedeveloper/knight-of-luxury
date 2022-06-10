@@ -144,7 +144,18 @@ $(function() {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        responsive: {
+            0: {
+                items: 2
+            },
+            480: {
+                items: 3
+            },
+            768: {
+                items: 6
+            }
+        }
     });
 });
 
@@ -180,6 +191,15 @@ $(window).on('load', function () {
     marker.addListener('click', function () {
         infowindow.open(map, marker);
     });
+
+    // 4. Resize Function
+    google.maps.event.addDomListener(window, 'resize', function() {
+
+        var center = map.getCenter();
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(center);
+    });
+
 
 });
 
@@ -244,4 +264,20 @@ $(function () {
 
     });
 
+});
+
+
+/* ================================
+|   |   |   Mobile menu
+================================ */
+
+$(function() {
+
+    $("#mobile-nav-open-btn").click(function() {
+        $("#mobile-nav").css("height", "100%");
+    });
+
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function() {
+        $("#mobile-nav").css("height", "0%");
+    });
 });
